@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-primary: #E5E5E5;
+  --bg-secondary: #323238;
+  --bt-bg-primary: #E0E0E0;
+  --bt-bg-secondary: #02799D;
+  --bt-primary: #323238;
+  --bt-secondary: #FFFFFF;
+  --dark-bg-primary: #121214;
+  --dark-bg-secondary: #FFFFFF;
+  --dark-bt-bg-primary: #29292E;
+  --dark-bt-bg-secondary: #0A3442;
+  --dark-bt-primary: #C4C4CC;
+  --dark-bt-secondary: #FFFFFF;
+}
+
+main {
+  display: flex;
+  gap: 19.2rem;
+  margin: 19.6rem auto 18.8rem;
+  max-width: 83rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.left {
+  color: rgba(50, 50, 56, 1);
+  
+}
+
+#timer {
+  width: 33rem;
+  margin-bottom: 4.8rem;
+}
+
+#timer span {
+  font-size: 12.6rem;
+  line-height: 14.7rem;
+}
+
+#controls {
+  height: 4.8rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background-color: var(--bg-primary);
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.1;
+  transition: .4;
+}
+
+.right {
+  width: 30.8rem;
+  height: 33.6rem;
+  display: grid;
+  grid-template-columns: 15.4rem 16.8rem;
+  grid-row: auto auto;
+  grid-column-gap: 1.6rem;
+  grid-row-gap: 1.6rem;
+}
+
+.sounds {
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--bt-bg-primary);
+  border-radius: 2.4rem;
+  color: var(--bt-primary);
+}
+
+.sounds.active path{
+  fill: var(--bt-secondary);
+}
+
+#rain.active {
+  background-color: var(--bt-bg-secondary);
+}
+
+#forrest.active {
+  background-color: var(--bt-bg-secondary);
+}
+
+#coffeShop.active {
+  background-color: var(--bt-bg-secondary);
+}
+
+#firePlace.active {
+  background-color: var(--bt-bg-secondary);
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 10rem;
+}
+
+footer button svg path {
+  fill: var(--bt-primary);
+}
