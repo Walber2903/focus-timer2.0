@@ -78,7 +78,7 @@ export default function() {
       muted = false;
       buttonSoundOff.classList.remove('hide');
       buttonSoundOn.classList.add('hide');
-      
+      playAndStopAudio(soundPage);
     }
   })
 
@@ -100,6 +100,7 @@ export default function() {
       muted = false;
       buttonSoundOff.classList.remove('hide');
       buttonSoundOn.classList.add('hide');
+      playAndStopAudio(soundPage);
     }
   })
 
@@ -121,6 +122,7 @@ export default function() {
       muted = false;
       buttonSoundOff.classList.remove('hide');
       buttonSoundOn.classList.add('hide');
+      playAndStopAudio(soundPage);
     }
   })
 
@@ -141,6 +143,7 @@ export default function() {
       muted = false;
       buttonSoundOff.classList.remove('hide');
       buttonSoundOn.classList.add('hide');
+      playAndStopAudio(soundPage);
     }
   })
 
