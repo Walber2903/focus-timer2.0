@@ -123,3 +123,10 @@ footer {
 footer button svg path {
   fill: var(--bt-primary);
 }
+
+@media(max-width: 719px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
